@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        table {
+            /* border: 1px solid red; */
+            border-collapse: collapse;
+            /* border-spacing: 10px; */
+        }
+        
+        table td {
+            border: 1px solid green;
+            /* empty-cells: hide; */
+            /* width: 50px;
+            height: 50px;
+            border-radius: 50px; */
+            border-radius: 5px;
+            background-color: #f4f4bd;
+        }
+        
+        .empty {
+            border: none;
+            background-color: transparent;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Table Demo</caption>
+        <thead>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+                <td>Item 5</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+                <td>Item 5</td>
+            </tr>
+            <tr>
+                <td class="red">Item 1</td>
+                <td class="red">Item 2</td>
+                <td class="red">Item 3</td>
+                <td class="red">Item 4</td>
+                <td class="red">Item 5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

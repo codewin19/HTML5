@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* to center*/
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        table {
+            border-spacing: 0;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        #table-header {
+            background-color: rgb(48, 158, 57);
+            color: #fff;
+        }
+        
+        table th,
+        table td {
+            text-align: left;
+            padding: 0.8em;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        table tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        
+        table tr:hover {
+            background-color: #b48b8b;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr id='table-header'>
+            <th>Products</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Date Sold</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Sold Oak Work Table</td>
+            <td>$800</td>
+            <td>10</td>
+            <td>03/15/2014</td>
+            <td>Waiting for pick up</td>
+        </tr>
+        <tr>
+            <td>Leather Iphone Wallet</td>
+            <td>$45</td>
+            <td>120</td>
+            <td>02/28/2014</td>
+            <td>In Transit</td>
+        </tr>
+        <tr>
+            <td>27'' Apple Thunderbolt display</td>
+            <td>$1000</td>
+            <td>25</td>
+            <td>02/10/2014</td>
+            <td>Delivered</td>
+        </tr>
+        <tr>
+            <td>Bose Studio Headphone</td>
+            <td>$60</td>
+            <td>90</td>
+            <td>01/14/2014</td>
+            <td>Delivered</td>
+        </tr>
+    </table>
+</body>
+
+</html>
