@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #fffda4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .invoice-container {
+            background-color: #fff;
+            width: 550px;
+        }
+        
+        .invoice-container h1 {
+            font-size: 1.5em;
+            background-color: rgb(139, 194, 74);
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            /* border-radius: 4px; */
+        }
+        
+        .invoice-container h1 small {
+            font-weight: 300 !important;
+            font-size: 0.5em;
+            display: block;
+        }
+        
+        .invoice-container>p {
+            text-align: center;
+            margin: 1em 0;
+            font-size: 0.8em;
+        }
+        
+        .invoice {
+            margin: 1em 0;
+            padding: 0.8em;
+        }
+        
+        .invoice h2 {
+            font-size: 1.125em;
+        }
+        
+        .invoice table {
+            width: 100%;
+            /* background-color: red; */
+            margin: 0.8em 0;
+            border-spacing: 0;
+        }
+        
+        .invoice table th,
+        .invoice table td {
+            padding: 0.3em 0;
+        }
+        
+        .invoice table th {
+            border-top: 2px solid #000;
+        }
+        
+        .align-right {
+            text-align: right;
+        }
+        
+        #total {
+            width: 375px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-container">
+        <h1>Thanks for using Nifty.<small>This is sample text</small></h1>
+
+
+        <div class="invoice">
+            <h2>Jhon Doe</h2>
+            <p>
+                Invoice #53421<br> January 21 2021
+            </p>
+
+            <table>
+                <tr>
+                    <td>Service 1</td>
+                    <td class="align-right">$ 19.99</td>
+                </tr>
+                <tr>
+                    <td>Service 2</td>
+                    <td class="align-right">$ 9.99</td>
+                </tr>
+                <tr>
+                    <td>Service 3</td>
+                    <td class="align-right">$ 4.00</td>
+                </tr>
+                <tr>
+                    <th class="align-right" id="total">Total</th>
+                    <th class="align-right">$ 33.98</th>
+                </tr>
+            </table>
+        </div>
+
+        <p><a href="#">View in browser</a></p>
+
+        <p>Acme inc. 123 Van Ness, San Francisco 94102</p>
+
+        <hr>
+
+        <p>Question? Email <a href="mailto:support@mycompany.inc">support@mycompany.inc</a></p>
+    </div>
+</body>
+
+</html>
