@@ -6,33 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <style>
         * {
             margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
         }
+
+        body{
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	height: 100vh;
+        }
+
+        form h2{
+        	text-align: center;
+        	margin-bottom: 20px;
+        }
+
+        .input{
+        	width: 100%;
+        	padding: 0.5em;
+        	border: 1px solid lightgray;
+        	color: gray;
+        	border-radius: 0.3em;
+        }
+
+        .input::placeholder{
+        	color: gray;
+        }
+
+        form table{
+        	border-spacing: 10px;
+        }
+
+        .sucess{
+        	background-color: rgba(0,255,0,0.18);
+        	border: 1px solid rgba(0,255,0,0.3);
+        }
+
+        .danger{
+        	background-color: rgba(255,0,0,0.18);
+        	border: 1px solid rgba(255,0,0,0.3);
+        }
+
+        .error{
+        	color: red;
+        	font-size: 0.8em;
+        	letter-spacing: 2px;
+        	padding: 0 0.5em;
+        }
     </style>
 </head>
 
 <body>
     <form>
+    	<h2>Sign Up Form</h2>
         <table>
             <tr>
                 <td><label for="username">Enter Username : </label></td>
-                <td> <input type="text" required placeholder="Enter Username" maxlength="5"></td>
+                <td> <input type="text" placeholder="Enter Username" class="input sucess"></td>
             </tr>
             <tr>
                 <td><label for="email">Enter Email : </label></td>
-                <td> <input type="email"></td>
+                <td> <input type="email" class="input danger" id="email" ><span class='error'><i class="fas fa-exclamation-circle"></i> Please fill valid email</span> </td>
             </tr>
             <tr>
                 <td><label for="password">Enter Password</label></td>
-                <td><input type="password"></td>
+                <td><input type="password" class="input"></td>
             </tr>
             <tr>
                 <td><label>Enter Date of birth : </label></td>
-                <td><input type="date"></td>
+                <td><input type="date" class="input"></td>
             </tr>
             <tr>
                 <td>
@@ -55,7 +102,7 @@
             <tr>
                 <td>Select State : </td>
                 <td>
-                    <select>
+                    <select class="input">
                         <option>Bihar</option>
                         <option>Punjab</option>
                         <option>Haryana</option>
@@ -65,19 +112,21 @@
             </tr>
             <tr>
                 <td><label>Upload Picture : </label></td>
-                <td><input type="file"></td>
+                <td><input type="file" ></td>
             </tr>
             <tr>
                 <td><label>Type Message : </label></td>
-                <td><textarea rows="2" cols="15"></textarea></td>
+                <td><textarea rows="2" cols="15" class="input"></textarea></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Register"></td>
+                <td><input type="submit" value="Register" id="button"></td>
             </tr>
         </table>
 
     </form>
+
+    
 </body>
 
 </html>
