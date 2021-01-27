@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        body {
+            background-color: rgb(158, 228, 250);
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            text-align: left;
+            align-items: center
+        }
+        
+        table {
+            border-spacing: 20px;
+        }
+        
+        .classfortd {
+            background-color: rgb(235, 231, 231);
+            padding: 8px;
+            border: 2px solid lightgray;
+            border-radius: 8px;
+            margin: 4px 0;
+        }
+        
+        .classforselect {
+            background-color: rgb(235, 231, 231);
+            padding: 8px;
+            text-align: center;
+        }
+        
+        fieldset {
+            background-color: rgb(111, 208, 247);
+            padding: 16px;
+        }
+        
+        select {
+            padding: 8px;
+            width: 100%;
+            border: 2px solid lightgray;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        
+        .submit {
+            margin: 20px 0;
+            font-size: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: rgb(97, 132, 248);
+            border: rgb(255, 0, 0);
+            border-radius: 10px;
+            color: rgb(100, 6, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <h1> Register For Contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label for="1.First Name">1. First Name <span>*</span></label><br>
+                        <input type="text" class="classfortd" required placeholder="First Name" maxlength="10">
+                    </td>
+                    <td>
+                        <label for="2.Last Name">2. Last Name <span>*</span></label><br>
+                        <input type="text" class="classfortd" required placeholder="Last Name" maxlength="10">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="3.Email">3.Email <span>*</span></label><br>
+                        <input type="email" class="classfortd" required placeholder="Email" maxlength="15">
+                    </td>
+                    <td>
+                        <label for="4.Phone Number">4.Phone Number <span>*</span></label><br>
+                        <input type="number" class="classfortd" required placeholder="Contact Number" maxlength="10">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>
+                        <label for="5.Address">5.Address <span>*</span></label><br>
+                        <input type="text" class="classfortd" required placeholder="Adress" maxlength="40">
+                    </td>
+
+                    <td>
+                        <label for="6.City">6.City <span>*</span></label><br>
+                        <input type="text" class="classfortd" required placeholder="Type City" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="7.State">7.State <span>*</span></label><br>
+                        <input type="text" class="classfortd" required placeholder="State Name" maxlength="10">
+                    </td>
+                    <td>
+                        <label for="8.Pin Code">8.Pin Code <span>*</span></label><br>
+                        <input type="number" class="classfortd" required placeholder="Zip Code" maxlength="6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>9.Select Price <span>*</span></br>
+                        <select class="classforselect">
+                                <option>---Select---</option>
+                                <option>RS.1 - Rs.10</option>
+                                <option>RS.101 - Rs.100</option>
+                                <option>RS.101 - Rs.1000</option>
+                                <option>RS.1001 - Rs.10050</option>
+                                <option>RS.1100 - Rs.1200</option>
+                                <option>RS.1201 - Rs.1300</option>
+                                <option>RS.1301 - Rs.1400</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>10.Select Service <span>*</span></label><br>
+
+                        <select class="classforselect">
+                            <option disabled selected value>--Option Select--</option>
+                            <option>Retailer</option>
+                            <option>Distributor</option>
+                            <option>White Label</option>
+                            <option>Sub Admin</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" class="submit" required placeholder="Sing Up">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

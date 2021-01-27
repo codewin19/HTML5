@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Check Box</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		
+		*{
+			font-family: Poppins, 'sans-serif';
+		}
+
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+
+		.checkbox{
+			display: inline-flex;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.checkbox__input{
+			display: none;
+		}
+
+		.check__box{
+			width: 1.25em;
+			height: 1.25em;
+			border:2px solid #ccc;
+			border-radius: 4px;
+			margin-right:12px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+		}
+
+		.check__box::after{
+			content:'\2714';
+			color:#fff;
+		}
+
+		.checkbox__input:checked + .check__box{
+			background: #2266dc;
+			border-color: #2266dc;
+		}
+	</style>
+</head>
+<body>
+	<label for="mycheckbox" class="checkbox">
+		<input type="checkbox" class="checkbox__input" name="" value="">
+		<div class="check__box"></div>
+		I accept all terms and conditionss
+	</label>
+</body>
+</html>
