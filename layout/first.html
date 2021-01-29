@@ -28,6 +28,9 @@
             background-color: #111;
             /* width: 1000px; */
             /* border-bottom-right-radius: 40px; */
+            position: sticky;
+            top: 0px;
+            left: 0;
         }
         
         ul li {
@@ -39,18 +42,65 @@
             text-decoration: none;
             color: #fff;
             display: block;
-            padding: 12px 24px;
+            padding: 12px 28px;
             text-align: center;
+            width: 200px;
         }
         
         ul li a:hover {
             background-color: #333;
+            border-bottom: 4px solid #f9f9f9;
+        }
+        
+        p {
+            font-size: 1.5em;
+            font-weight: 300;
+            padding: 1em;
+            text-align: justify;
+        }
+        
+        p:nth-child(odd) {
+            background-color: lightgray;
+        }
+        
+        #selected {
+            /* position: relative;
+            left: 100px;
+            top: 50px; */
+            margin-top: 50px;
         }
         
         @media only screen and (max-width: 600px) {
             ul li {
                 display: block;
             }
+        }
+        
+        #btn {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 10px;
+            right: 30px;
+            opacity: 0.9;
+            z-index: 999;
+        }
+        
+        div a {
+            color: #f9f9f9;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        
+        .box {
+            height: 200px;
+            width: 400px;
         }
     </style>
 </head>
@@ -64,9 +114,24 @@
         <li><a href="#">Contact Us</a></li>
     </ul>
 
+    <p id="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p id="selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque voluptatibus debitis veniam deleniti libero neque nisi, nostrum, itaque animi minima veritatis tempora laborum, dolorum blanditiis laudantium eveniet deserunt cumque.</p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.7704319825657!2d85.1163290150179!3d25.612543583704625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed583b6e4a653b%3A0x41f5a7de840b80c8!2sVerma%20Center!5e0!3m2!1sen!2sin!4v1611749768613!5m2!1sen!2sin"
-        width="600" height="450" frameborder="0" style="border:5px solid black;margin:10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div id="btn"><a href="#top">Top</a></div>
+
+
+    <div class="box" style="background-color: red;width:500px;z-index:999;opacity:0.5;"></div>
+    <div class="box" style="background-color: green;position:relative;bottom:100px;z-index: -9;"></div>
+
+
 </body>
 
 </html>
