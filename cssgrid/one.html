@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			/* height: 100vh; */
+		}
+
+		.grid-container{
+			height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr auto 1fr;
+		}
+
+		.header,.footer{
+			background-color: green;
+			grid-column-start: 1;
+			grid-column-end: -1;
+		}
+
+
+
+		.sidebar,.navbar{
+			background-color: yellow;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="header">Header</div>
+		<div class="sidebar">Sidebar</div>
+		<div class="container">Container</div>
+		<div class="navbar">Navbar</div>
+		<div class="footer">Footer</div>
+	</div>
+</body>
+</html>
