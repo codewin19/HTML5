@@ -18,33 +18,31 @@
             display: grid;
             color: #fff;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 300px 200px auto;
-            height: 800px;
+            grid-template-rows: 300px 200px 3300px;
+            grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
         }
         
         .header,
-        .footer {
-            grid-column-start: 1;
-            grid-column-end: -1;
-        }
+        .footer {}
         
         .header {
             background-color: goldenrod;
+            grid-area: header;
         }
         
         .main {
             background-color: red;
-            grid-column-start: 1;
-            grid-column-end: 3;
+            grid-area: main;
         }
         
         .sidebar {
             background-color: green;
-            grid-column-start: 4;
+            grid-area: sidebar;
         }
         
         .footer {
             background-color: teal;
+            grid-area: footer;
         }
     </style>
 </head>
